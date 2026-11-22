@@ -6,8 +6,8 @@ backend:
   name: github
   repo: Sun-1025/Sun-1025.github.io
   branch: main
-  # 免费 OAuth proxy（Cloudflare Worker），部署后把下面这个地址换成实际 Worker 域名
-  base_url: https://YOUR-WORKER.workers.dev
+  # 免费 OAuth proxy（Netlify Functions 自建，源码见仓库 oauth-proxy/）
+  base_url: https://sunzhihao-cms-auth.netlify.app
   auth_endpoint: auth
   cms_label_prefix: cms/
 
