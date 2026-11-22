@@ -4,11 +4,33 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>孙志昊 · 个人作品集</title>
-<meta name="description" content="孙志昊的个人作品集 —— 山东石油化工学院物联网工程，嵌入式开发与物联网应用方向。">
+<meta name="description" content="孙志昊的个人作品集，山东石油化工学院物联网工程，嵌入式开发与物联网应用方向。">
+<meta name="author" content="孙志昊">
+<meta name="theme-color" content="#131209">
+<link rel="canonical" href="https://sunzhihaoai.top/">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="孙志昊 · 个人作品集">
+<meta property="og:url" content="https://sunzhihaoai.top/">
 <meta property="og:title" content="孙志昊 · 个人作品集">
 <meta property="og:description" content="山东石油化工学院物联网工程 2025 级，嵌入式开发与物联网应用方向。">
-<meta property="og:image" content="assets/scene-front.webp">
+<meta property="og:image" content="https://sunzhihaoai.top/assets/scene-front.webp">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="孙志昊 · 个人作品集">
+<meta name="twitter:description" content="山东石油化工学院物联网工程 2025 级，嵌入式开发与物联网应用方向。">
+<meta name="twitter:image" content="https://sunzhihaoai.top/assets/scene-front.webp">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "孙志昊",
+  "alternateName": "Sun Zhihao",
+  "url": "https://sunzhihaoai.top/",
+  "image": "https://sunzhihaoai.top/assets/portrait-dark.webp",
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "山东石油化工学院" },
+  "knowsAbout": ["物联网工程", "嵌入式开发", "C/C++", "Python", "ESP32"]
+}
+</script>
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='14' fill='%23131209'/><circle cx='32' cy='32' r='13' fill='%23cdd96b'/></svg>">
 <link rel="preconnect" href="https://miaoda.feishu.cn">
 <link rel="stylesheet" href="https://miaoda.feishu.cn/fonts/css2?family=Manrope:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap">
@@ -45,6 +67,58 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
+/* ==================== 浅色主题（增量，默认仍为深色） ==================== */
+html[data-theme="light"]{
+  --bg:#f4f2e8;
+  --surface:#ffffff;
+  --surface-2:#f7f5ee;
+  --surface-3:#e6e2d6;
+  --ink:#1d1c15;
+  --ink-2:#4e4c41;
+  --ink-3:#7d7a6c;
+  --accent:#6b7a12;
+  --line:rgba(29,28,21,.16);
+  --line-2:rgba(29,28,21,.09);
+}
+html[data-theme="light"] body{background:var(--bg);color:var(--ink)}
+html[data-theme="light"] ::selection{background:var(--accent);color:#fff}
+html[data-theme="light"] .scene img{filter:brightness(1.05) saturate(.94)}
+html[data-theme="light"] .veil{
+  background:
+    radial-gradient(ellipse 135% 105% at 50% 42%, rgba(244,242,232,0) 46%, rgba(244,242,232,.62) 100%),
+    linear-gradient(180deg, rgba(244,242,232,.5) 0%, rgba(244,242,232,0) 26%, rgba(244,242,232,0) 58%, rgba(244,242,232,.7) 100%);
+}
+html[data-theme="light"] .grain{opacity:.1}
+html[data-theme="light"] .nav{
+  border-color:rgba(29,28,21,.16);
+  background:linear-gradient(150deg,rgba(255,255,255,.92) 0%,rgba(255,255,255,.66) 48%,rgba(255,255,255,.82) 100%);
+  box-shadow:0 10px 30px rgba(0,0,0,.10),inset 0 1.5px 0 rgba(255,255,255,.9),inset 0 -1px 0 rgba(29,28,21,.06);
+}
+html[data-theme="light"] .nav-brand{background:linear-gradient(90deg,#1d1c15,#5c5a4e);-webkit-background-clip:text;background-clip:text;color:transparent}
+html[data-theme="light"] .node{
+  background:linear-gradient(150deg,rgba(255,255,255,.86) 0%,rgba(255,255,255,.64) 48%,rgba(255,255,255,.78) 100%);
+  border-color:rgba(29,28,21,.16);
+  box-shadow:0 10px 30px rgba(0,0,0,.10),inset 0 1.5px 0 rgba(255,255,255,.95),inset 0 -1px 0 rgba(29,28,21,.05);
+}
+html[data-theme="light"] .node:hover{background:linear-gradient(150deg,rgba(255,255,255,.96) 0%,rgba(255,255,255,.78) 50%,rgba(255,255,255,.9) 100%);border-color:rgba(29,28,21,.28)}
+html[data-theme="light"] .node-title{color:#1d1c15}
+html[data-theme="light"] .node-en{color:rgba(29,28,21,.66)}
+html[data-theme="light"] .node-idx{color:rgba(107,122,18,.9)}
+html[data-theme="light"] .foot{color:var(--ink-2);text-shadow:none}
+html[data-theme="light"] .panel{background:rgba(244,242,232,.62)}
+html[data-theme="light"] .panel-inner{color:var(--ink)}
+html[data-theme="light"] .panel-close,
+html[data-theme="light"] .talk-close{background:rgba(29,28,21,.06);border-color:rgba(29,28,21,.18);color:var(--ink)}
+html[data-theme="light"] .talk{background:rgba(255,255,255,.82);box-shadow:0 24px 60px rgba(0,0,0,.16),inset 0 1.5px 0 rgba(255,255,255,.95)}
+html[data-theme="light"] .talk-kicker{color:#7d7a6c}
+html[data-theme="light"] .talk-title{color:#1d1c15}
+html[data-theme="light"] .talk-fab{
+  background:rgba(255,255,255,.78);
+  border-color:rgba(29,28,21,.18);
+  color:#1d1c15;
+  box-shadow:0 12px 30px rgba(0,0,0,.14),inset 0 1.5px 0 rgba(255,255,255,.95);
+}
+html[data-theme="light"] .readbar{background:linear-gradient(180deg,rgba(29,28,21,.12),rgba(29,28,21,.05));border-color:rgba(29,28,21,.14)}
 html,body{height:100%}
 body{
   background:var(--bg);color:var(--ink);
@@ -105,6 +179,23 @@ button{font-family:inherit;color:inherit}
   font-size:12px;line-height:16px;font-weight:500;letter-spacing:.2em;
   color:var(--ink-3);text-transform:uppercase;font-variant-numeric:tabular-nums;
 }
+.theme-toggle{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:26px;height:26px;flex:0 0 auto;
+  border-radius:50%;
+  border:1px solid rgba(255,255,255,.18);
+  background:rgba(255,255,255,.07);
+  color:var(--ink-2);
+  cursor:pointer;
+  transition:background var(--dur-color) var(--ease),border-color var(--dur-color) var(--ease),color var(--dur-color) var(--ease),transform var(--dur-move) var(--ease);
+}
+.theme-toggle:hover{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.34);color:var(--ink)}
+.theme-toggle:active{transform:scale(.94)}
+.theme-toggle:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.theme-toggle svg{width:14px;height:14px;stroke:currentColor;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.theme-toggle .ic-sun{display:none}
+html[data-theme="light"] .theme-toggle .ic-moon{display:none}
+html[data-theme="light"] .theme-toggle .ic-sun{display:block}
 
 /* ==================== 场景层 ==================== */
 .scene{
@@ -234,6 +325,10 @@ button{font-family:inherit;color:inherit}
   color:var(--ink-2);text-shadow:0 1px 8px rgba(0,0,0,.75);
   pointer-events:none;
 }
+
+.foot-note{white-space:nowrap}
+.foot-visits{display:inline-flex;align-items:center;opacity:.9}
+.foot-visits img{display:block;height:20px;width:auto;border-radius:4px}
 
 /* ==================== 详情面板 ==================== */
 .panel{
@@ -691,6 +786,11 @@ button{font-family:inherit;color:inherit}
 }
 
 /* ==================== 响应式 ==================== */
+@media (max-width:1024px){
+  .panel-inner{padding:var(--s-600) clamp(18px,3.4vw,36px) var(--s-800)}
+  .panel-title{font-size:32px;line-height:36px}
+  .heading-3{font-size:32px;line-height:36px}
+}
 @media (max-width:760px){
   .scene img{object-position:50% 42%}
   .nav{top:var(--s-200);gap:var(--s-75);padding:8px 12px;max-width:calc(100vw - 32px)}
@@ -786,21 +886,21 @@ button{font-family:inherit;color:inherit}
 <a class="skip" href="#stage">跳到主内容</a>
 
 <div class="scene" id="scene">
-  <img data-dir="front" class="is-on" src="assets/scene-front.webp?v=12" alt="孙志昊的卡通形象，坐在桌前使用笔记本电脑">
-  <img data-dir="left" src="assets/scene-left.webp?v=12" alt="">
-  <img data-dir="right" src="assets/scene-right.webp?v=12" alt="">
-  <img data-dir="up" src="assets/scene-up.webp?v=12" alt="">
-  <img data-dir="rb30" src="assets/scene-rb30.webp?v=12" alt="">
-  <img data-dir="lb30" src="assets/scene-lb30.webp?v=12" alt="">
-  <img data-dir="rt30" src="assets/scene-rt30.webp?v=12" alt="">
-  <img data-dir="rt60" src="assets/scene-rt60.webp?v=12" alt="">
-  <img data-dir="lt30" src="assets/scene-lt30.webp?v=12" alt="">
-  <img data-dir="lt60" src="assets/scene-lt60.webp?v=12" alt="">
+  <img data-dir="front" class="is-on" src="assets/scene-front.webp?v=13" alt="孙志昊的卡通形象，坐在桌前使用笔记本电脑" fetchpriority="high" decoding="async">
+  <img data-dir="left" src="assets/scene-left.webp?v=13" alt="" decoding="async">
+  <img data-dir="right" src="assets/scene-right.webp?v=13" alt="" decoding="async">
+  <img data-dir="up" src="assets/scene-up.webp?v=13" alt="" decoding="async">
+  <img data-dir="rb30" src="assets/scene-rb30.webp?v=13" alt="" decoding="async">
+  <img data-dir="lb30" src="assets/scene-lb30.webp?v=13" alt="" decoding="async">
+  <img data-dir="rt30" src="assets/scene-rt30.webp?v=13" alt="" decoding="async">
+  <img data-dir="rt60" src="assets/scene-rt60.webp?v=13" alt="" decoding="async">
+  <img data-dir="lt30" src="assets/scene-lt30.webp?v=13" alt="" decoding="async">
+  <img data-dir="lt60" src="assets/scene-lt60.webp?v=13" alt="" decoding="async">
   <div id="fx">
     <div id="steam">
       <i class="puff"></i><i class="puff"></i><i class="puff"></i>
     </div>
-    <img id="ydim" src="assets/scene-ydim.png?v=18" alt="">
+    <img id="ydim" src="assets/scene-ydim.webp?v=19" alt="" decoding="async">
   </div>
 </div>
 <div class="veil"></div>
@@ -810,6 +910,10 @@ button{font-family:inherit;color:inherit}
   <span class="nav-brand">孙志昊</span>
   <span class="nav-sep"></span>
   <span class="nav-meta">SUN ZHI HAO</span>
+  <button class="theme-toggle" id="themeToggle" type="button" aria-label="切换明暗主题" title="切换明暗主题">
+    <svg class="ic-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    <svg class="ic-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M19.1 4.9L17 7M7 17L4.9 19.1"/></svg>
+  </button>
 </nav>
 
 <main class="stage" id="stage">
@@ -817,7 +921,8 @@ button{font-family:inherit;color:inherit}
 </main>
 
 <footer class="foot">
-  <span>THANKS FOR YOUR SUPPORT</span>
+  <span class="foot-note">THANKS FOR YOUR SUPPORT</span>
+  <span class="foot-visits"><img src="https://hits.sh/sunzhihaoai.top.svg?style=flat-square&label=%E8%AE%BF%E9%97%AE&color=cdd96b&labelColor=131209" alt="访问计数" loading="lazy" decoding="async" height="20"></span>
 </footer>
 
 <div class="panel" id="panel">
@@ -939,7 +1044,7 @@ let DATA = {
       period: '2026.07 — 2026.08', role: '需求拆解 · 架构设计 · 编码 · 测试交付',
       summary: '独立承接图书管理系统全流程开发：需求梳理、架构设计、编码实现、异常处理、测试交付全环节，输出功能完整、运行稳定的结构化图书管理工具。',
       tags: ['C 语言', '结构体', '模块化函数', '异常处理', '工程交付'],
-      images: ['assets/library-shot.jpg'],
+      images: ['assets/library-shot.webp'],
       links: [{ text: '查看源码（Gitee）', url: 'https://gitee.com/SunZHAO1025/library-management-system-cpp' }],
       sections: [
         { h: '一、项目背景与实习目标', p: '为夯实 C 语言编程基础与结构化程序设计能力，完整模拟商用小型图书管理系统的业务逻辑与开发流程，2026 年 7 月至 8 月，我以独立开发人的身份完成 C 语言图书管理系统全流程开发实习。本次实习以「从需求到交付的完整工程闭环」为核心目标，全程独立承担需求梳理、架构设计、编码实现、异常处理、测试交付全环节，最终输出功能完整、运行稳定的结构化图书管理工具。' },
@@ -1103,7 +1208,7 @@ let DATA = {
 const DETAILS = {
   entj: {
     kicker: '性格类型 · MBTI', title: 'ENTJ · 指挥官型',
-    img: 'assets/entj.png',
+    img: 'assets/entj.webp',
     desc: '外向（E）、直觉（N）、思考（T）、判断（J）。行事目标导向、规划清晰，习惯先搭框架再推进；既有敢闯敢试的锐气，也有沉下心打磨一件事的耐心。',
     points: [
       '擅长在多线并行的节奏里把控方向，把复杂任务拆成可执行的节点',
@@ -1883,6 +1988,21 @@ document.addEventListener('click', e => {
   if (e.target.closest('#talk') || e.target.closest('#talkFab')) return;
   closeTalk();
 });
+/* 明暗主题切换：默认深色，手动切换后写入 localStorage */
+(function initTheme(){
+  var root = document.documentElement;
+  var btn = document.getElementById('themeToggle');
+  try {
+    var saved = localStorage.getItem('theme');
+    if (saved === 'light' || saved === 'dark') root.setAttribute('data-theme', saved);
+  } catch (err) {}
+  if (!btn) return;
+  btn.addEventListener('click', function(){
+    var next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+    root.setAttribute('data-theme', next);
+    try { localStorage.setItem('theme', next); } catch (err) {}
+  });
+})();
 </script>
 </body>
 </html>
