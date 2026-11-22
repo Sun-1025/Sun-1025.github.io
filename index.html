@@ -831,7 +831,8 @@ button{font-family:inherit;color:inherit}
 /* ============================================================
    数据层：改内容只改这里
    ============================================================ */
-const DATA = {
+/* 站点数据：内联默认值；若 content/site.json 可读（CMS 生成），启动后覆盖 */
+let DATA = {
   about: {
     highlight: '山止川行，<em>风禾尽起</em>。',
     lines: [
@@ -1514,6 +1515,12 @@ function tmplCases(cat) {
       <i class="case-go">›</i>
     </article>`).join('')}</div>`;
 }
+
+/* 数据层：优先读取后端编辑器写入的 content/site.json，失败则沿用内联默认值 */
+fetch('site.json', { cache: 'no-store' })
+  .then(r => (r.ok ? r.json() : null))
+  .then(j => { if (j && j.about && j.cases) DATA = j; })
+  .catch(() => {});
 
 const RENDER = {
   about() {
