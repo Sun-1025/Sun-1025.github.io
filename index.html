@@ -752,6 +752,33 @@ button{font-family:inherit;color:inherit}
   *,*::before,*::after{animation:none!important;transition-duration:.01ms!important}
   .reveal{opacity:1;translate:none}
 }
+/* ============ 留言板：右下角悬浮按钮 + 独立玻璃面板 ============ */
+.talk-fab{position:fixed;right:clamp(14px,2.2vw,26px);bottom:clamp(14px,2.2vw,26px);z-index:88;display:inline-flex;align-items:center;gap:8px;padding:10px 17px 10px 14px;border-radius:var(--r-full);border:1px solid rgba(236,231,219,.18);background:rgba(19,18,9,.46);backdrop-filter:blur(22px) saturate(160%);-webkit-backdrop-filter:blur(22px) saturate(160%);box-shadow:0 10px 30px rgba(0,0,0,.32),inset 0 1.5px 0 rgba(255,255,255,.16),inset 0 -1px 0 rgba(255,255,255,.05);color:var(--ink);font:600 13px/18px var(--font);letter-spacing:.02em;cursor:pointer;transition:border-color var(--dur-color) var(--ease),background var(--dur-color) var(--ease),transform var(--dur-move) var(--ease),box-shadow var(--dur-move) var(--ease)}
+.talk-fab:hover{border-color:rgba(205,217,107,.6);background:rgba(32,31,15,.56);transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,0,0,.36),inset 0 1.5px 0 rgba(255,255,255,.2),inset 0 -1px 0 rgba(255,255,255,.05)}
+.talk-fab:active{transform:translateY(0) scale(.98)}
+.talk-fab:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.talk-fab svg{width:16px;height:16px;flex:none;opacity:.92}
+.talk-fab[aria-expanded="true"]{border-color:rgba(205,217,107,.75);background:rgba(32,31,15,.6)}
+.talk{position:fixed;right:clamp(14px,2.2vw,26px);bottom:calc(clamp(14px,2.2vw,26px) + 60px);z-index:89;width:min(400px,calc(100vw - 28px));height:min(600px,calc(100dvh - 118px));display:flex;flex-direction:column;border-radius:var(--r-lg);border:1px solid rgba(255,255,255,.15);background:rgba(16,15,8,.6);backdrop-filter:blur(30px) saturate(160%) brightness(1.02);-webkit-backdrop-filter:blur(30px) saturate(160%) brightness(1.02);box-shadow:0 24px 60px rgba(0,0,0,.44),inset 0 1.5px 0 rgba(255,255,255,.15),inset 0 -1px 0 rgba(255,255,255,.05);opacity:0;transform:translateY(14px) scale(.97);transform-origin:100% 100%;pointer-events:none;transition:opacity 300ms var(--ease),transform 420ms var(--ease);overflow:hidden}
+.talk.is-open{opacity:1;transform:none;pointer-events:auto}
+.talk-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:15px 15px 11px;border-bottom:1px solid rgba(236,231,219,.1);flex:none}
+.talk-kicker{display:block;font-size:10px;line-height:13px;font-weight:500;letter-spacing:.2em;color:#8a8578;margin-bottom:3px}
+.talk-title{font-size:16px;line-height:20px;font-weight:600;letter-spacing:.01em}
+.talk-close{display:inline-flex;align-items:center;justify-content:center;width:29px;height:29px;flex:none;border-radius:var(--r-full);border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);color:var(--ink);font-size:13px;line-height:1;cursor:pointer;transition:border-color var(--dur-color) var(--ease),color var(--dur-color) var(--ease)}
+.talk-close:hover{border-color:var(--accent);color:var(--accent)}
+.talk-close:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.talk-body{flex:1;min-height:0;overflow-y:auto;overflow-x:hidden;padding:8px 12px 14px;scrollbar-width:thin;scrollbar-color:rgba(236,231,219,.2) transparent}
+.talk-body::-webkit-scrollbar{width:6px}
+.talk-body::-webkit-scrollbar-thumb{background:rgba(236,231,219,.18);border-radius:99px}
+.talk-body::-webkit-scrollbar-track{background:transparent}
+@media (max-width:520px){
+  .talk-fab{padding:10px 15px 10px 13px;font-size:12px}
+  .talk{height:min(72dvh,560px)}
+  .talk-fab span{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  .talk,.talk-fab{transition:none}
+}
 </style>
 </head>
 <body>
@@ -826,6 +853,27 @@ button{font-family:inherit;color:inherit}
     <a class="detail-link" id="detailLink" target="_blank" rel="noopener"></a>
   </div>
 </div>
+
+<!-- 留言板：右下角悬浮按钮 + 独立玻璃面板 -->
+<button class="talk-fab" id="talkFab" type="button" aria-label="打开留言板" aria-expanded="false" aria-controls="talk">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+  </svg>
+  <span>留言</span>
+</button>
+
+<section class="talk" id="talk" role="dialog" aria-modal="false" aria-label="留言板" aria-hidden="true">
+  <div class="talk-head">
+    <div>
+      <span class="talk-kicker">GUESTBOOK</span>
+      <h3 class="talk-title">留言板</h3>
+    </div>
+    <button class="talk-close" id="talkClose" type="button" aria-label="收起留言板">✕</button>
+  </div>
+  <div class="talk-body" id="talkBody">
+    <div class="giscus" id="giscusMount"></div>
+  </div>
+</section>
 
 <script>
 /* ============================================================
@@ -1768,6 +1816,8 @@ document.addEventListener('click', e => {
 
 document.addEventListener('keydown', e => {
   if (e.key !== 'Escape') return;
+  const tk = document.getElementById('talk');
+  if (tk && tk.classList.contains('is-open')) { closeTalk(); return; }
   if (detailEl.classList.contains('is-open')) { closeDetail(); return; }
   if (currentKey) closePanel();
 });
@@ -1776,6 +1826,63 @@ const hello = $('#hello');
 function closeHello() { hello.classList.remove('is-open'); }
 hello.addEventListener('click', () => closeHello());
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeHello(); });
+
+/* 留言板（giscus，按需加载） */
+const talkEl = document.getElementById('talk');
+const talkFab = document.getElementById('talkFab');
+const talkCloseBtn = document.getElementById('talkClose');
+const giscusMount = document.getElementById('giscusMount');
+let giscusLoaded = false;
+
+function loadGiscus() {
+  if (giscusLoaded || !giscusMount) return;
+  giscusLoaded = true;
+  const s = document.createElement('script');
+  s.src = 'https://giscus.app/client.js';
+  s.async = true;
+  s.crossOrigin = 'anonymous';
+  const attrs = {
+    'data-repo': 'Sun-1025/Sun-1025.github.io',
+    'data-repo-id': 'R_kgDOV1etUw',
+    'data-category': 'Announcements',
+    'data-category-id': 'DIC_kwDOV1etU84DLtON',
+    'data-mapping': 'pathname',
+    'data-strict': '0',
+    'data-reactions-enabled': '1',
+    'data-emit-metadata': '0',
+    'data-input-position': 'bottom',
+    'data-theme': 'transparent_dark',
+    'data-lang': 'zh-CN'
+  };
+  Object.keys(attrs).forEach(k => s.setAttribute(k, attrs[k]));
+  giscusMount.appendChild(s);
+}
+
+function openTalk() {
+  if (!talkEl) return;
+  talkEl.classList.add('is-open');
+  talkEl.setAttribute('aria-hidden', 'false');
+  if (talkFab) talkFab.setAttribute('aria-expanded', 'true');
+  loadGiscus();
+}
+
+function closeTalk() {
+  if (!talkEl) return;
+  talkEl.classList.remove('is-open');
+  talkEl.setAttribute('aria-hidden', 'true');
+  if (talkFab) { talkFab.setAttribute('aria-expanded', 'false'); try { talkFab.focus(); } catch (err) {} }
+}
+
+if (talkFab) talkFab.addEventListener('click', e => {
+  e.stopPropagation();
+  if (talkEl.classList.contains('is-open')) closeTalk(); else openTalk();
+});
+if (talkCloseBtn) talkCloseBtn.addEventListener('click', e => { e.stopPropagation(); closeTalk(); });
+document.addEventListener('click', e => {
+  if (!talkEl || !talkEl.classList.contains('is-open')) return;
+  if (e.target.closest('#talk') || e.target.closest('#talkFab')) return;
+  closeTalk();
+});
 </script>
 </body>
 </html>
