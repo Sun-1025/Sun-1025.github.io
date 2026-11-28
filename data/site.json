@@ -190,9 +190,374 @@
         "status": "published",
         "visible": true,
         "order": 3,
-        "updatedAt": "2026-11-28T00:40:30.818Z",
+        "updatedAt": "2026-11-28T04:38:39.000Z",
         "title": "大学",
         "photos": [
+          {
+            "src": "/assets/photos/daily/001.webp",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/assets/photos/daily/002.webp",
+            "alt": "",
+            "caption": "跑马拉松来了"
+          },
+          {
+            "src": "/assets/photos/daily/003.webp",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/assets/photos/daily/004.webp",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/assets/photos/daily/005.webp",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/assets/photos/daily/006.webp",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/assets/photos/daily/007.webp",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/assets/photos/daily/008.webp",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/assets/photos/daily/009.webp",
+            "alt": "",
+            "caption": "巡视领地."
+          },
+          {
+            "src": "/assets/photos/daily/010.webp",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/assets/photos/daily/011.webp",
+            "alt": "",
+            "caption": "手艺尚可."
+          },
+          {
+            "src": "/assets/photos/daily/012.webp",
+            "alt": "",
+            "caption": "收到吾儿的信 朕很欣慰"
+          },
+          {
+            "src": "/assets/photos/daily/013.webp",
+            "alt": "",
+            "caption": "想你了，东营"
+          },
+          {
+            "src": "/assets/photos/daily/014.webp",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/assets/photos/daily/015.webp",
+            "alt": "",
+            "caption": "羽毛球大师."
+          },
+          {
+            "src": "/assets/photos/daily/016.webp",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/assets/photos/daily/017.webp",
+            "alt": "",
+            "caption": "生活给我出难题，我说OK小问题."
+          },
+          {
+            "src": "/assets/photos/daily/018.webp",
+            "alt": "",
+            "caption": "好好睡觉."
+          },
+          {
+            "src": "/assets/photos/daily/019.webp",
+            "alt": "",
+            "caption": "TMD，老子回来啦"
+          },
+          {
+            "src": "/assets/photos/daily/020.webp",
+            "alt": "",
+            "caption": "许我一人走南闯北的勇气."
+          },
+          {
+            "src": "/assets/photos/daily/021.webp",
+            "alt": "",
+            "caption": "尘封已久的宿舍即将迎来它的King."
+          },
+          {
+            "src": "/assets/photos/daily/022.webp",
+            "alt": "",
+            "caption": "每天都在认真上晚自习"
+          },
+          {
+            "src": "/assets/photos/daily/023.webp",
+            "alt": "",
+            "caption": "全宿舍最忧郁的男人."
+          },
+          {
+            "src": "/assets/photos/daily/024.webp",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/assets/photos/daily/025.webp",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/assets/photos/daily/026.webp",
+            "alt": "",
+            "caption": "NICE"
+          },
+          {
+            "src": "/assets/photos/daily/027.webp",
+            "alt": "",
+            "caption": "放牛过来吧！！"
+          },
+          {
+            "src": "/assets/photos/daily/028.webp",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/assets/photos/daily/029.webp",
+            "alt": "",
+            "caption": "我的心里只有你"
+          },
+          {
+            "src": "/assets/photos/daily/030.webp",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/assets/photos/daily/031.webp",
+            "alt": "",
+            "caption": "新衣服一到我就这样"
+          },
+          {
+            "src": "/assets/photos/daily/032.webp",
+            "alt": "",
+            "caption": "由我来守护未来祖国的花朵"
+          },
+          {
+            "src": "/assets/photos/daily/033.webp",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/assets/photos/daily/034.webp",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/assets/photos/daily/035.webp",
+            "alt": "",
+            "caption": "不错"
+          },
+          {
+            "src": "/assets/photos/daily/036.webp",
+            "alt": "",
+            "caption": "其实这些金牌都是我的，但被抢走了"
+          },
+          {
+            "src": "/assets/photos/daily/037.webp",
+            "alt": "",
+            "caption": "从不放空话"
+          },
+          {
+            "src": "/assets/photos/daily/038.webp",
+            "alt": "",
+            "caption": "莫听穿林打叶声"
+          },
+          {
+            "src": "/assets/photos/daily/039.webp",
+            "alt": "",
+            "caption": "超级缝纫大师"
+          },
+          {
+            "src": "/assets/photos/daily/040.webp",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/assets/photos/daily/041.webp",
+            "alt": "",
+            "caption": "不要畏惧一个人的出发"
+          },
+          {
+            "src": "/assets/photos/daily/042.webp",
+            "alt": "",
+            "caption": "来"
+          },
+          {
+            "src": "/assets/photos/daily/043.webp",
+            "alt": "",
+            "caption": "预报说有雨，我只听到了忧郁"
+          },
+          {
+            "src": "/assets/photos/daily/044.webp",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/assets/photos/daily/045.webp",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/assets/photos/daily/046.webp",
+            "alt": "",
+            "caption": "备战高考"
+          },
+          {
+            "src": "/assets/photos/daily/047.webp",
+            "alt": "",
+            "caption": "OK啊，依旧是不到期末不学习"
+          },
+          {
+            "src": "/assets/photos/daily/048.webp",
+            "alt": "",
+            "caption": "咖啡我只喝热饮."
+          },
+          {
+            "src": "/assets/photos/daily/049.webp",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/assets/photos/daily/050.webp",
+            "alt": "",
+            "caption": "It's time for lunch!!"
+          },
+          {
+            "src": "/assets/photos/daily/051.webp",
+            "alt": "",
+            "caption": "小小高数，我承认你有点难，但也不过尔尔！"
+          },
+          {
+            "src": "/assets/photos/daily/052.webp",
+            "alt": "",
+            "caption": "最后离校之人"
+          },
+          {
+            "src": "/assets/photos/daily/053.webp",
+            "alt": "",
+            "caption": "双手已经洗到发白"
+          },
+          {
+            "src": "/assets/photos/daily/054.webp",
+            "alt": "",
+            "caption": "感到孤独就看超级飞侠"
+          },
+          {
+            "src": "/assets/photos/daily/055.webp",
+            "alt": "",
+            "caption": "AGI时代，人人都可以作前端开发工程师"
+          },
+          {
+            "src": "/assets/photos/daily/056.webp",
+            "alt": "",
+            "caption": "在这里，我的一分钟值五毛钱"
+          },
+          {
+            "src": "/assets/photos/daily/057.webp",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/assets/photos/daily/058.webp",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/assets/photos/daily/059.webp",
+            "alt": "",
+            "caption": "明月照我心"
+          },
+          {
+            "src": "/assets/photos/daily/060.webp",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/assets/photos/daily/061.webp",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/assets/photos/daily/062.webp",
+            "alt": "",
+            "caption": "不想上课想睡觉"
+          },
+          {
+            "src": "/assets/photos/daily/063.webp",
+            "alt": "",
+            "caption": "不想上课想睡觉"
+          },
+          {
+            "src": "/assets/photos/daily/064.webp",
+            "alt": "",
+            "caption": "忙碌了一天的孙师傅终于可以休息了"
+          },
+          {
+            "src": "/assets/photos/daily/065.webp",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/assets/photos/daily/066.webp",
+            "alt": "",
+            "caption": "树上真的会长蘑菇"
+          },
+          {
+            "src": "/assets/photos/daily/067.webp",
+            "alt": "",
+            "caption": "这要是个girl多好啊"
+          },
+          {
+            "src": "/assets/photos/daily/068.webp",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/assets/photos/daily/069.webp",
+            "alt": "",
+            "caption": ""
+          },
+          {
+            "src": "/assets/photos/daily/070.webp",
+            "alt": "",
+            "caption": "我应该考虑请个助理了"
+          },
+          {
+            "src": "/assets/photos/daily/071.webp",
+            "alt": "",
+            "caption": "#拿起球拍拒绝emo"
+          },
+          {
+            "src": "/assets/photos/daily/072.webp",
+            "alt": "",
+            "caption": "A shy girl"
+          },
+          {
+            "src": "/assets/photos/daily/073.webp",
+            "alt": "",
+            "caption": "屎盆子镶金边"
+          },
           {
             "src": "/assets/photos/campus/qingxie.webp",
             "alt": "孙志昊站在青协第六届全体见面会现场",
