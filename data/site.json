@@ -164,19 +164,22 @@
         "id": "timeline-校内预备实习",
         "type": "timeline",
         "title": "小学",
-        "note": "暂未公开"
+        "note": "暂未公开",
+        "order": 0
       },
       {
         "id": "timeline-东营区图书馆",
         "type": "timeline",
         "title": "初中",
-        "note": "暂未公开"
+        "note": "暂未公开",
+        "order": 1
       },
       {
         "id": "timeline-青年志愿者协会",
         "type": "timeline",
         "title": "高中",
-        "note": "暂未公开"
+        "note": "暂未公开",
+        "order": 2
       },
       {
         "no": "04",
@@ -340,13 +343,15 @@
         "id": "campus-青年志愿者协会",
         "type": "campus",
         "title": "青年志愿者协会",
-        "note": "暂未公开"
+        "note": "暂未公开",
+        "order": 0
       },
       {
         "id": "campus-科技协会",
         "type": "campus",
         "title": "科技协会",
-        "note": "暂未公开"
+        "note": "暂未公开",
+        "order": 1
       }
     ]
   },
@@ -1127,7 +1132,9 @@
       "id": "interest-item-3d9e",
       "type": "interest",
       "title": "其他城市待解锁中...",
-      "note": "暂未公开"
+      "note": "暂未公开",
+      "parent": "travel",
+      "order": 8
     }
   ],
   "tools": {
